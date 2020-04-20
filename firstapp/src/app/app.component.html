@@ -1,0 +1,12 @@
+<div style="text-align:center">
+
+  <h1>
+      Welcome {{ title }}!
+    </h1>
+    <label [innerHTML]="title"></label>
+    <input [(ngModel)]="title" placeholder="">
+    <app-firstcompo></app-firstcompo> 
+    <!-- <div class='app-firstcompo'></div> using class-->
+    <div app-firstcompo></div>
+  </div>
+  

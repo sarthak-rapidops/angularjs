@@ -1,0 +1,15 @@
+<div style="text-align: center;">
+  <h1>Day 3 exercise</h1>
+  <pre><input #uname (keyup.enter)="onusername(uname.value)" (blur)="onusername(uname.value)"></pre>
+  <pre><textarea type="text" #uadd (keyup.enter)="onaddress(uadd.value)"(blur)="onaddress(uadd.value)"></textarea></pre>
+  <button 
+    (click)="enableDisableRule()" 
+    [ngClass]="{'green' : toggle, 'red': !toggle}">
+    {{status}}
+</button>
+  <pre>{{username}}</pre>
+  <pre>{{address}}</pre>
+  <pre><button (click)="clear()">clear</button></pre>
+  <app-root></app-root>
+</div>
+
